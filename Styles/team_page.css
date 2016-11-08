@@ -1,0 +1,40 @@
+.meet-team{
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	font-size: 34px;
+	margin: 160px 0 160px 0;
+}
+
+.main{
+	padding: 0;
+}
+
+.profiles{
+	background-color: rgba(0, 0, 0, 0.7);
+	font-family: Armata;
+	color: white;
+	padding: 120px 0 120px 0;
+}
+
+.profiles .profile{
+	padding: 0 60px 0 60px;
+}
+
+.profiles .profile img{
+	border-radius: 15px;
+	display: block;
+	margin: auto;
+	box-shadow: 13px 21px 40px 0px rgba(0,0,0,0.18);
+}
+
+.profiles .profile h3{
+	font-size: 30px;
+	line-height: 1.2;
+	text-align: center;
+	margin: 30px 0 30px 0;
+}
+
+.profiles .profile p{
+	font-size: 18px;
+	line-height: 1.9;
+}
