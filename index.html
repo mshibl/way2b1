@@ -51,7 +51,7 @@
       <div class="collapse navbar-collapse" id="navbar-collapse">
         <ul class="nav navbar-nav navbar-right pages">
           <li><a href="index.html"><span class="page-link">Products</span></a></li>
-          <li><a href="#"><span class="page-link">Jobs</span></a></li>
+          <li><a href="jobs.html"><span class="page-link">Jobs</span></a></li>
           <li><a href="team.html"><span class="page-link">About Us</span></a></li>
         </ul>
       </div>
@@ -59,7 +59,8 @@
   </nav>
 
   <div class="jumbotron">
-    <img class="img-responsive" src="http://placehold.it/2560x1440">
+    <img class="img-responsive" src="Assets/Images/sea_foam.jpg">
+    <div class="overlay"></div>
     <p class="jumbotron-message">Connect the Many Facets of Your Life.</p>
   </div>
 
@@ -72,7 +73,7 @@
         <p>We enhance the operations and professional service teams that support families across the planet.</p>
       </div>
       <div class="col-md-6">
-        <img class="img-responsive" src="http://placehold.it/663x552">
+        <img class="img-responsive" src="Assets/Images/mission.jpg">
       </div>
     </div>
 
@@ -84,8 +85,17 @@
         </div>
         <div class="cards col-md-8">
           <div class="cards-inner">
-            <div class='card active'>
-              <img src="http://placehold.it/350x150">
+            <div class='card active row'>
+              <div class='card-container'>
+                <div class="col-sm-4">
+                  <img src="http://placehold.it/150x150">
+                </div>
+                <div class="col-sm-8 product-desc">
+                  <h3>Source</h3>
+                  <p>Easy to use financial controls and auditing. Approve, Deny or Question expenditures, investments, charitable requests and critical decisions.</p>
+                  <span class="learn-more">Learn More</span>
+                </div>
+              </div>
             </div>          
             <div class='card'>
               <img src="http://placehold.it/350x150">
@@ -143,14 +153,15 @@
 
 
     <div class="row bottom">
-      <img class="img-responsive" src="Assets/Images/capture_knowledge.jpg">
-<!--       <p>
+      <img class="img-responsive" src="http://placehold.it/2560x1440">
+      <div class="overlay"></div>
+      <p>
         Capture Knowledge.
         Increase Visibilty.
         <br>
         <br>
         Connect The Family To What Is Important.
-      </p> -->
+      </p>
     </div>
   </div>
 
@@ -158,9 +169,45 @@
     <div class="container-fluid">
       <div class="pull-left copyright">Copyright © 2016 WAY2B1. All rights reserved.</div>
       <div class="pull-right">
-        <a href="#">Terms of Use</a>
-        <a href="#">Privacy Policy</a>
-      </div>
+        <span class="policy-btn" data-toggle="modal" data-target="#terms-modal"> Terms of Use </span>
+        <span class="policy-btn" data-toggle="modal" data-target="#privacy-modal"> Privacy Policy </span>
+      </div>  
     </div>
   </footer>
 </body>
+
+
+<!-- Terms of Use -->
+<div class="modal fade" id="terms-modal" tabindex="-1" role="dialog" aria-labelledby="termsOfUseLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="termsOfUseLabel">Terms of Use</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Privacy Policy -->
+<div class="modal fade" id="privacy-modal" tabindex="-1" role="dialog" aria-labelledby="privacyPolicyLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="privacyPolicyLabel">Privacy Policy</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+    </div>
+  </div>
+</div>

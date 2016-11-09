@@ -1,10 +1,3 @@
-.meet-team{
-	font-family: 'Open Sans', sans-serif;
-	text-align: center;
-	font-size: 34px;
-	margin: 160px 0 160px 0;
-}
-
 .main{
 	padding: 0;
 }
@@ -13,11 +6,22 @@
 	background-color: rgba(0, 0, 0, 0.7);
 	font-family: Armata;
 	color: white;
+	/*padding: 120px 0 120px 0;*/
+}
+
+.profiles > .row{
 	padding: 120px 0 120px 0;
+	position: relative;
 }
 
 .profiles .profile{
-	padding: 0 60px 0 60px;
+	/*padding: 0 60px 0 60px;*/
+}
+
+.profiles .row .section-bg{
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 .profiles .profile img{
