@@ -19,6 +19,7 @@
     <link href="https://fonts.googleapis.com/css?family=Aldrich|Armata|Montserrat|Open+Sans" rel="stylesheet">
     <!-- Custom Styles -->
     <link href="Styles/style.css" rel="stylesheet">
+    <link href="Styles/mobile_styles.css" rel="stylesheet">
 
   <!-- Scripts -->
     <!-- JQuery -->
@@ -26,8 +27,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <!-- Bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Scrollify -->
+    <script src="Scripts/jquery.scrollify.min.js"></script>
     <!-- Custom Script -->
-    <script src="script.js"></script>
+    <script src="Scripts/script.js"></script>
+    <script src="Scripts/carousel.js"></script>
 
 
   <!-- start Mixpanel -->
@@ -45,115 +49,168 @@
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
           <i class="fa fa-bars" aria-hidden="true"></i>
         </button>
-        <a class="navbar-brand" href="#">Way2B1</a>
+        <img alt="logo" class="logo img-responsive" src="Assets/Images/Logo_Landscape.png">
+        <!-- <a class="navbar-brand" href="#">Way2B1</a> -->
       </div>
 
       <div class="collapse navbar-collapse" id="navbar-collapse">
         <ul class="nav navbar-nav navbar-right pages">
           <li><a href="index.html"><span class="page-link">Products</span></a></li>
           <li><a href="jobs.html"><span class="page-link">Jobs</span></a></li>
-          <li><a href="team.html"><span class="page-link">About Us</span></a></li>
+          <li><a href="about_us.html"><span class="page-link">About Us</span></a></li>
         </ul>
       </div>
     </div>
   </nav>
 
   <div class="jumbotron">
-    <img class="img-responsive" src="Assets/Images/sea_foam.jpg">
     <div class="overlay"></div>
     <p class="jumbotron-message">Connect the Many Facets of Your Life.</p>
   </div>
 
   <div class="container-fluid">
-    <div class="row mission">
-      <div class="col-md-4 z paragraph">
-        <h3>Our Mission</h3>      
-        <p>To address the common challenges faced by families by providing an integrated access point to people, services, and information.</p>
-        <br>
-        <p>We enhance the operations and professional service teams that support families across the planet.</p>
-      </div>
-      <div class="col-md-6">
-        <img class="img-responsive" src="Assets/Images/mission.jpg">
-      </div>
+    <div class="ecosystem row">
+          <div class="col-md-4 paragraph">
+            <h3>Our Mission</h3>      
+            <p>To address the common challenges faced by families by providing an integrated access point to people, services, and information.</p>
+            <br>
+            <p>We enhance the operations and professional service teams that support families across the planet.</p>
+          </div>
+          <div class="col-md-6 col-md-offset-2">
+              <img class="img-responsive" src="Assets/Images/Ecosystem_Diagram.png">
+          </div>
     </div>
 
     <div class="row products">
-      <h3 class="col-md-12">Suite of Products</h3>
-      <div class="carousel">
-        <div class="left-button  col-md-1 col-md-offset-1">
-          <button class="carousel-button"><img src="Assets/Buttons/left-button.png" /></button>
-        </div>
-        <div class="cards col-md-8">
-          <div class="cards-inner">
-            <div class='card active row'>
-              <div class='card-container'>
-                <div class="col-sm-4">
-                  <img src="http://placehold.it/150x150">
+        <h3 class="col-md-12">Suite of Products</h3>
+        <div class="carousel-container">
+          <div class="carouselbox">
+            <div class="buttons left-button prev">
+              <img src="Assets/Buttons/left-button.svg" />
+            </div>
+            <ol class="content container-fluid">
+              <li class="current">
+                <div class="product-card row">
+                  <div class="col-sm-4 product-image">
+                    <img class="img-responsive" src="Assets/Images/Source.png">
+                  </div>
+                  <div class="col-sm-8 product-desc">
+                      <h3>Source</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <span class="learn-more">Learn More</span>
+                  </div>
                 </div>
-                <div class="col-sm-8 product-desc">
-                  <h3>Source</h3>
-                  <p>Easy to use financial controls and auditing. Approve, Deny or Question expenditures, investments, charitable requests and critical decisions.</p>
-                  <span class="learn-more">Learn More</span>
+              </li>
+              <li>
+                <div class="product-card row">
+                  <div class="col-sm-4 product-image">
+                    <img class="img-responsive" src="Assets/Images/Fixit.png">
+                  </div>
+                  <div class="col-sm-8 product-desc">
+                      <h3>Fixit</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <span class="learn-more">Learn More</span>
+                  </div>
                 </div>
-              </div>
-            </div>          
-            <div class='card'>
-              <img src="http://placehold.it/350x150">
-            </div>          
-            <div class='card'>
-              <img src="http://placehold.it/350x150">
-            </div>          
-            <div class='card'>
-              <img src="http://placehold.it/350x150">
-            </div>          
-            <div class='card'>
-              <img src="http://placehold.it/350x150">
-            </div>          
+              </li>
+              <li>
+                <div class="product-card row">
+                  <div class="col-sm-4 product-image">
+                    <img class="img-responsive" src="Assets/Images/Greenlight.png">
+                  </div>
+                  <div class="col-sm-8 product-desc">
+                      <h3>Greenlight</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <span class="learn-more">Learn More</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="product-card row">
+                  <div class="col-sm-4 product-image">
+                    <img class="img-responsive" src="Assets/Images/Palette.png">
+                  </div>
+                  <div class="col-sm-8 product-desc">
+                      <h3>Palette</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <span class="learn-more">Learn More</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="product-card row">
+                  <div class="col-sm-4 product-image">
+                    <img class="img-responsive" src="Assets/Images/Spotless.png">
+                  </div>
+                  <div class="col-sm-8 product-desc">
+                      <h3>Spotless</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <span class="learn-more">Learn More</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="product-card row">
+                  <div class="col-sm-4 product-image">
+                    <img class="img-responsive" src="Assets/Images/Takeoff.png">
+                  </div>
+                  <div class="col-sm-8 product-desc">
+                      <h3>Takeoff</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <span class="learn-more">Learn More</span>
+                  </div>
+                </div>
+              </li>            
+            </ol>
+            <div class="buttons right-button next">
+              <img src="Assets/Buttons/right-button.svg" />
+            </div>
           </div>
-          <div class="bullets">
-            <div class="bullet active"></div>
-            <div class="bullet"></div>
-            <div class="bullet"></div>
-            <div class="bullet"></div>
-            <div class="bullet"></div>
+          <div class="bullets-container">
+            <div class="bullets content">
+              <div class="bullet current"></div>
+              <div class="bullet"></div>
+              <div class="bullet"></div>
+              <div class="bullet"></div>
+              <div class="bullet"></div>
+              <div class="bullet"></div>
+            </div>
           </div>
         </div>
-        <div class="right-button col-md-1">
-          <button class="carousel-button"><img src="Assets/Buttons/right-button.png" /></button>
-        </div>
-      </div>
     </div>
 
     <div class="row impact">
       <h3 class="col-md-12">Areas of Impact</h3>
       <div class="impact-graph col-md-12">
-        <img src="http://placehold.it/1020x1020" />
+        <img class="img-responsive" src="Assets/Images/imapct_graph.jpg" />
       </div>
     </div>
 
     <div class="row solutions">
       <h3 class="col-md-12">Problems we solve</h3>
-      <p class="col-md-6">
-        <span class='paragraph-head'>Families with complex lives face these common challenges:</span>
-
-         - Family employees must work in a variety of roles and often outside of their core expertise
-         - Against the deluge of projects and incoming requests, it is difficult to establish proper procedures
-         - Information is siloed and poor history is maintained for key systems and decisions
-         - Time pressures, isolation, and lack of transparency block prioritization and feedback on key projects
-         - Outdated or inadequate technology impedes day to day workflows
-
-        Family office: A team that supports families, assisting in their investments, operations and personal well being. Family offices can be as small as an assistant or a childcare professional and as large as a small corporation that spans disparate domains.
-      </p>
-      <p class="col-md-6">
-        Way2B1 was founded to address these problems and generate efficiencies, eliminate isolation, and enhance communication within the team as a whole, and between the family office and the family itself. And, perform all of these activities while preserving security and privacy.
-
-        With experience in building the most successful family offices in the US and technical expertise honed within Palantir - Way2B1 is solving these challenges utilizing the most current technology and the most effective operational methodology. As part of our quest we value: enjoyment in the journey, team investment, mentorship, and embracing the creed of the artisan, that is craftsmanship within our areas of expertise. We look for opportunities to help our teammates before ourselves. We are always thinking about how to help our families.
-      </p>
+      <div class="col-md-6 left">
+        <div class="col-md-12">
+          <p class='paragraph-head'>Families with complex lives face these common challenges:</p>
+          <ul class="list-group">
+           <li> - Family employees must work in a variety of roles and often outside of their core expertise </li>
+           <li> - Against the deluge of projects and incoming requests, it is difficult to establish proper procedures </li>
+           <li> - Information is siloed and poor history is maintained for key systems and decisions </li>
+           <li> - Time pressures, isolation, and lack of transparency block prioritization and feedback on key projects </li>
+           <li> - Outdated or inadequate technology impedes day to day workflows </li>
+          </ul>
+           <p> Family office: A team that supports families, assisting in their investments, operations and personal well being. Family offices can be as small as an assistant or a childcare professional and as large as a small corporation that spans disparate domains. </p>
+        </div>
+      </div>
+      <div class="col-md-6 right">
+        <div class="col-md-12">
+          <p> Way2B1 was founded to address these problems and generate efficiencies, eliminate isolation, and enhance communication within the team as a whole, and between the family office and the family itself. And, perform all of these activities while preserving security and privacy. </p>
+          <br>
+          <p> With experience in building the most successful family offices in the US and technical expertise honed within Palantir - Way2B1 is solving these challenges utilizing the most current technology and the most effective operational methodology. As part of our quest we value: enjoyment in the journey, team investment, mentorship, and embracing the creed of the artisan, that is craftsmanship within our areas of expertise. We look for opportunities to help our teammates before ourselves. We are always thinking about how to help our families. </p>
+        </div>
+      </div>
     </div>
 
-
     <div class="row bottom">
-      <img class="img-responsive" src="http://placehold.it/2560x1440">
       <div class="overlay"></div>
       <p>
         Capture Knowledge.
@@ -166,13 +223,15 @@
   </div>
 
   <footer class="footer">
-    <div class="container-fluid">
-      <div class="pull-left copyright">Copyright © 2016 WAY2B1. All rights reserved.</div>
-      <div class="pull-right">
-        <span class="policy-btn" data-toggle="modal" data-target="#terms-modal"> Terms of Use </span>
-        <span class="policy-btn" data-toggle="modal" data-target="#privacy-modal"> Privacy Policy </span>
+      <div class="col-md-6">
+        <div class="pull-left">Copyright © 2016 WAY2B1. All rights reserved.</div>
+      </div>
+      <div class="col-md-6">
+        <div class="pull-right">
+          <span class="policy-btn" data-toggle="modal" data-target="#terms-modal"> Terms of Use </span>
+          <span class="policy-btn" data-toggle="modal" data-target="#privacy-modal"> Privacy Policy </span>
+        </div>  
       </div>  
-    </div>
   </footer>
 </body>
 

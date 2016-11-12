@@ -19,7 +19,7 @@
     <link href="https://fonts.googleapis.com/css?family=Aldrich|Armata|Montserrat|Open+Sans" rel="stylesheet">
     <!-- Custom Styles -->
     <link href="Styles/style.css" rel="stylesheet">
-    <link href="Styles/team_page.css" rel="stylesheet">
+    <link href="Styles/about_us.css" rel="stylesheet">
 
   <!-- Scripts -->
     <!-- JQuery -->
@@ -27,8 +27,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <!-- Bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Google Maps -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUOJpPBRBdMhal_FyBj-GbhnTgwtTmoVs&callback=initMap"> </script>
     <!-- Custom Script -->
-    <script src="script.js"></script>
+    <script src="Scripts/infobubble-compiled.js"></script>
+    <script src="Scripts/script.js"></script>
 
 
   <!-- start Mixpanel -->
@@ -46,23 +49,22 @@
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
           <i class="fa fa-bars" aria-hidden="true"></i>
         </button>
-        <a class="navbar-brand" href="#">Way2B1</a>
+        <img alt="logo" class="logo img-responsive" src="Assets/Images/Logo_Landscape.png">
       </div>
 
       <div class="collapse navbar-collapse" id="navbar-collapse">
         <ul class="nav navbar-nav navbar-right pages">
           <li><a href="index.html"><span class="page-link">Products</span></a></li>
           <li><a href="jobs.html"><span class="page-link">Jobs</span></a></li>
-          <li><a href="team.html"><span class="page-link">About Us</span></a></li>
+          <li><a href="about_us.html"><span class="page-link">About Us</span></a></li>
         </ul>
       </div>
     </div>
   </nav>
 
   <div class="jumbotron">
-    <img class="img-responsive" src="http://placehold.it/2560x1440">
     <div class="overlay"></div>
-    <span class="jumbotron-message">Join the team!</span>
+    <p class="jumbotron-message">Join the Team!</p>
   </div>
 
   <div class="container-fluid main">
@@ -73,8 +75,8 @@
     <div class="profiles">
       <div class="row">
         <div class="profile col-md-4 row">
-          <div class="col-md-12">
-            <img src="http://placehold.it/340x340">
+          <div class="col-md-12 profile-pic">
+            <img class="img-responsive" src="Assets/Team/Wayne.png">
           </div>
           <h3 class="col-md-12">
             Wayne Osborne
@@ -83,20 +85,20 @@
             The platform currently includes domain focused applications that take the pain out of travel, financial controls, housekeeping and maintenance. Augmenting the technology platform is Way2B1's privacy conscious network, Grapevine, which introduces families to the world's elite service providers and philanthropic.
           </p>
         </div>
-        <div class=" profile col-md-4 row">
-          <div class="col-md-12">
-            <img src="http://placehold.it/340x340">
+        <div class="profile col-md-4 row">
+          <div class="col-md-12 profile-pic">
+            <img class="img-responsive" src="Assets/Team/Jordan.png">
           </div>
           <h3 class="col-md-12">
-            Wayne Osborne
+            Jordan Rein
           </h3>
           <p class="col-md-12">
             The platform currently includes domain focused applications that take the pain out of travel, financial controls, housekeeping and maintenance. Augmenting the technology platform is Way2B1's privacy conscious network, Grapevine, which introduces families to the world's elite service providers and philanthropic.
           </p>
         </div>
-        <div class=" profile col-md-4 row">
-          <div class="col-md-12">
-            <img src="http://placehold.it/340x340">
+        <div class="profile col-md-4 row">
+          <div class="col-md-12 profile-pic">
+            <img class="img-responsive" src="Assets/Team/Wayne.png">
           </div>
           <h3 class="col-md-12">
             Wayne Osborne
@@ -107,34 +109,33 @@
         </div>
       </div>
 
-      <div class="row">
-        <img class="section-bg" src="Assets/Images/looking-up-forest.jpg" />
+      <div class="row section-bg">
         <div class="overlay"></div>
         <div class="profile col-md-4 row">
-          <div class="col-md-12">
-            <img src="http://placehold.it/340x340">
+          <div class="col-md-12 profile-pic">
+            <img class="img-responsive" src="Assets/Team/Divyesh.png">
           </div>
           <h3 class="col-md-12">
-            Wayne Osborne
+            Divyesh Motiwala
           </h3>
           <p class="col-md-12">
             The platform currently includes domain focused applications that take the pain out of travel, financial controls, housekeeping and maintenance. Augmenting the technology platform is Way2B1's privacy conscious network, Grapevine, which introduces families to the world's elite service providers and philanthropic.
           </p>
         </div>
         <div class="profile col-md-4 row">
-          <div class="col-md-12">
-            <img src="http://placehold.it/340x340">
+          <div class="col-md-12 profile-pic">
+            <img class="img-responsive" src="Assets/Team/Brett.png">
           </div>
           <h3 class="col-md-12">
-            Wayne Osborne
+            Brett
           </h3>
           <p class="col-md-12">
             The platform currently includes domain focused applications that take the pain out of travel, financial controls, housekeeping and maintenance. Augmenting the technology platform is Way2B1's privacy conscious network, Grapevine, which introduces families to the world's elite service providers and philanthropic.
           </p>
         </div>
         <div class="profile col-md-4 row">
-          <div class="col-md-12">
-            <img src="http://placehold.it/340x340">
+          <div class="col-md-12 profile-pic">
+            <img class="img-responsive" src="Assets/Team/Kathleen.png">
           </div>
           <h3 class="col-md-12">
             Wayne Osborne
@@ -147,33 +148,33 @@
 
       <div class="row">
         <div class="profile col-md-4 row">
-          <div class="col-md-12">
-            <img src="http://placehold.it/340x340">
+          <div class="col-md-12 profile-pic">
+            <img class="img-responsive" src="Assets/Team/Allxie.png">
           </div>
           <h3 class="col-md-12">
-            Wayne Osborne
+            Allxie Cleary
           </h3>
           <p class="col-md-12">
             The platform currently includes domain focused applications that take the pain out of travel, financial controls, housekeeping and maintenance. Augmenting the technology platform is Way2B1's privacy conscious network, Grapevine, which introduces families to the world's elite service providers and philanthropic.
           </p>
         </div>
-        <div class=" profile col-md-4 row">
-          <div class="col-md-12">
-            <img src="http://placehold.it/340x340">
+        <div class="profile col-md-4 row">
+          <div class="col-md-12 profile-pic">
+            <img class="img-responsive" src="Assets/Team/Gala.png">
           </div>
           <h3 class="col-md-12">
-            Wayne Osborne
+            Tarang Gala
           </h3>
           <p class="col-md-12">
             The platform currently includes domain focused applications that take the pain out of travel, financial controls, housekeeping and maintenance. Augmenting the technology platform is Way2B1's privacy conscious network, Grapevine, which introduces families to the world's elite service providers and philanthropic.
           </p>
         </div>
-        <div class=" profile col-md-4 row">
-          <div class="col-md-12">
-            <img src="http://placehold.it/340x340">
+        <div class="profile col-md-4 row">
+          <div class="col-md-12 profile-pic">
+            <img class="img-responsive" src="Assets/Team/Graham.png">
           </div>
           <h3 class="col-md-12">
-            Wayne Osborne
+            Graham Allen
           </h3>
           <p class="col-md-12">
             The platform currently includes domain focused applications that take the pain out of travel, financial controls, housekeeping and maintenance. Augmenting the technology platform is Way2B1's privacy conscious network, Grapevine, which introduces families to the world's elite service providers and philanthropic.
@@ -182,8 +183,13 @@
       </div>
     </div>
 
-    <div class="map">
+<!--     <div class="map">
       <img class="img-responsive" src="Assets/Images/map.jpg">
+    </div> -->
+<!--     <iframe class="map" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ4Q_1jMt_j4ARfxovOgjVgVk&key=AIzaSyAbLFevDVOXdxaAPJ7UsG70oGFfn9x1DwU" allowfullscreen></iframe> -->
+    <div class="map-container">
+      <div id="map"></div>
+      <!-- <div class="map-overlay"></div> -->
     </div>
   </div>
 
