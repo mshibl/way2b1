@@ -29,17 +29,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- Google Maps -->
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUOJpPBRBdMhal_FyBj-GbhnTgwtTmoVs&callback=initMap"> </script>
-    <!-- Custom Script -->
     <script src="Scripts/infobubble-compiled.js"></script>
+    <!-- Custom Script -->
+    <script src="Scripts/map.js"></script>
     <script src="Scripts/script.js"></script>
-
-
-  <!-- start Mixpanel -->
-<!--   <script type="text/javascript">
-    (function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
-      mixpanel.init("d37992743c5d4fc52396935fb27571a2");
-  </script> -->
-  <!-- end Mixpanel -->
 </head>
 
 <body>
@@ -183,23 +176,56 @@
       </div>
     </div>
 
-<!--     <div class="map">
-      <img class="img-responsive" src="Assets/Images/map.jpg">
-    </div> -->
-<!--     <iframe class="map" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ4Q_1jMt_j4ARfxovOgjVgVk&key=AIzaSyAbLFevDVOXdxaAPJ7UsG70oGFfn9x1DwU" allowfullscreen></iframe> -->
     <div class="map-container">
       <div id="map"></div>
-      <!-- <div class="map-overlay"></div> -->
     </div>
   </div>
 
-  <footer>
-    <div class="container-fluid">
-      <div class="pull-left copyright">Copyright © 2016 WAY2B1. All rights reserved.</div>
-      <div class="pull-right">
-        <a href="#">Terms of Use</a>
-        <a href="#">Privacy Policy</a>
-      </div>
+  <footer class="footer">
+    <div class="col-md-6">
+      <div class="pull-left">Copyright © 2016 WAY2B1. All rights reserved.</div>
     </div>
+    <div class="col-md-6">
+      <div class="pull-right">
+        <span class="policy-btn" data-toggle="modal" data-target="#terms-modal"> Terms of Use </span>
+        <span class="policy-btn" data-toggle="modal" data-target="#privacy-modal"> Privacy Policy </span>
+      </div>  
+    </div>  
   </footer>
 </body>
+
+
+<!-- Terms of Use -->
+<div class="modal fade" id="terms-modal" tabindex="-1" role="dialog" aria-labelledby="termsOfUseLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="termsOfUseLabel">Terms of Use</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Privacy Policy -->
+<div class="modal fade" id="privacy-modal" tabindex="-1" role="dialog" aria-labelledby="privacyPolicyLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="privacyPolicyLabel">Privacy Policy</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+    </div>
+  </div>
+</div>

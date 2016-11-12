@@ -1,0 +1,286 @@
+/* Ecosystem Section Styles */
+
+.ecosystem {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 8vw 0 8vw;
+}
+
+.ecosystem h3{
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-size: 3.5vh;
+  line-height: 1.1;
+  color: #212121;
+}
+
+.ecosystem p{
+  font-family: '.SF NS Text', 'Open Sans', sans-serif;;
+  font-size: 1.8vh;
+  line-height: 1.9;
+  color: #000000;
+  padding-right: 20px;
+}
+
+.ecosystem img{
+  padding: 20px 0 20px 0;
+}
+
+
+/* Products Section Styles */
+
+.products{
+  background-color: #F2F2F2;
+  height: 100vh;
+  max-width: 100vw;
+}
+
+.products > h3{
+  text-align: center;
+  font-family: 'Armata', 'Open Sans', sans-serif;
+  font-size: 34px;
+  margin-top: 100px;
+}
+
+/* Carousel Styles */
+
+.carousel-container{
+  height: 100%;
+  width: 100%;
+}
+
+.carouselbox {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-family: helvetica,sans-serif;
+  font-size: 14px;
+  position: relative;
+  overflow: hidden;
+}
+.content {
+  width: 80%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+.content li {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+}
+
+.active {
+  height: 60%;
+}
+.active li {
+  display: none;
+  position: absolute;
+  top: 200px;
+}
+.active li.current {
+  top: -120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.active .buttons {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  padding: 5px 0;
+  text-align: center;
+  z-index: 10;
+}
+
+.left-button{
+  left: 0;
+}
+
+.right-button{
+  right: 0;
+}
+
+.carouselbox button {
+  border: none;
+  display: none;
+}
+.active button {
+  display: block;
+  background: transparent;
+} 
+.offscreen {
+  position: absolute;
+  left: -2000px;
+}
+
+.bullets-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.bullets{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 90px;
+  margin-top: 20px;
+}
+
+.bullets .bullet{
+  width: 51px;
+  height: 4px;
+  background: red;
+  border-radius: 3.5px;
+  margin: 0 7.5px 0 7.5px;  
+  background-color: #e0e0e0;
+}
+
+
+.bullets .current{
+  background-color: #7e7e7e;
+}
+
+.product-card{
+  width: 60%;
+  background-color: #f8f8f8;
+  box-shadow: 11px 2px 60px 0 rgba(0, 0, 0, 0.18);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.product-card .product-image{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-card .product-image img{
+  width: 60%
+}
+
+.product-card .product-desc{
+  border-radius: 0 8px 8px 0;
+  padding: 70px;
+  background-image: linear-gradient(to bottom, #292929, #161616);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.product-card .product-desc h3{
+  margin-top: 0px;
+  font-size: 22px;
+  line-height: 1.4;
+  color: #ca293e;
+}
+
+.product-card .product-desc p{
+  color: #f8f8f8;
+  font-size: 2vh;
+}
+
+.product-card .product-desc .learn-more{
+  color: #9b9b9b;
+  border-bottom: 1px;
+}
+
+/* Impact Section Styles */
+
+.impact{
+  height: 100vh;
+  margin-bottom: 50px;
+}
+
+.impact h3{
+  text-align: center;
+  font-family: 'Armata', 'Open Sans', sans-serif;
+  font-size: 34px;
+  margin: 90px 0 50px 0;
+}
+
+.impact .impact-graph{
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.impact img{
+  width: 40vmax;
+}
+
+/* Solutions Section Styles */
+
+.solutions{
+  background-color: #F2F2F2;
+  padding: 0 10vmin 10vmin 10vmin;
+  font-family: 'Armata', 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.9;
+  color: #000000;
+  min-height: 100vh;
+}
+
+.solutions h3{
+  text-align: left;
+  font-size: 34px;
+  margin: 128px 0 50px 0;
+}
+
+.solutions ul{
+  list-style-type: none;
+}
+
+.solutions .paragraph-head{
+  font-size: 20px;
+}
+
+.solutions .right{
+  padding-left: 30px;
+}
+
+.solutions .left{
+  padding-right: 30px;
+}
+
+/* Bottom Styles */
+
+.bottom {
+  background: url('../Assets/Images/forest.jpg');
+  background-attachment:fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: 90vh;
+  margin-bottom: 0;
+  padding: 0;
+  position: relative;
+}
+
+
+.bottom p{
+  font-family: 'Armata', 'Open Sans', sans-serif;
+  font-size: 4vmax;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
