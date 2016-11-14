@@ -1,0 +1,116 @@
+.main{
+	padding: 0;
+}
+
+.jumbotron {
+	background: url('../Assets/Images/san_francisco.jpg');
+	background-attachment:fixed;
+	background-size: cover;
+}
+
+/* Profile Styles */
+
+.profiles{
+	background-color: rgba(0, 0, 0, 0.7);
+	font-family: Armata;
+	color: white;
+}
+
+.profiles > .row{
+	padding: 55px 0 40px 0;
+	position: relative;
+	min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 100vw;
+  margin: 0;
+}
+
+.profiles .section-bg{
+	background: url('../Assets/Images/forest.jpg');
+	background-attachment:fixed;
+	background-size: cover;
+}
+
+.profiles .overlay{
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.profiles .profile{
+	padding: 40px 0 40px 0;
+}
+
+.profiles .profile .profile-pic img{
+	width: 60%;
+}
+
+.profiles .row .section-bg{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.profiles .profile img{
+	border-radius: 15px;
+	display: block;
+	margin: auto;
+	box-shadow: 13px 21px 40px 0px rgba(0,0,0,0.18);
+}
+
+.profiles .profile h3{
+	font-size: 22px;
+	line-height: 1.2;
+	text-align: center;
+	margin: 30px 0 30px 0;
+}
+
+.profiles .profile p{
+		max-width: 100vw;
+	font-size: 15px;
+	line-height: 1.9;
+	padding: 0 80px 0 80px;
+}
+
+/* Map Styles */
+
+.map-container{
+	position: relative;
+}
+
+.map-overlay{
+	background: rgba(0, 0, 0, 0.4);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#map{
+	width: 100vw;
+	height: 100vh;
+}
+
+#info-window{
+	color: white;
+	padding: 20px;
+}
+
+#info-window h3{
+	font-family: 'Montserrat';
+		font-size: 24px;
+	line-height: 1.1;
+	margin-bottom: 35px;
+}
+
+#info-window p{
+	font-family: Armata;
+	font-size: 12px;
+	line-height: 1.5;
+}

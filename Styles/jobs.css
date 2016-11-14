@@ -1,0 +1,28 @@
+.bg-gray{
+  background-color: #f4f4f4;
+}
+
+.jumbotron {
+  background: url('../Assets/Images/san_francisco.jpg');
+  background-attachment:fixed;
+  background-size: cover;
+}
+
+.job-posting{
+  font-family: 'Armata';
+  min-height: 100vh;
+  padding: 100px 80px 0 80px ;
+}
+
+.job-posting .position-title{
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+.job-posting .section-title{
+  font-size: 18px;
+}
+
+.job-posting p{
+  font-size: 12px;
+}
