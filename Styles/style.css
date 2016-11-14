@@ -5,16 +5,35 @@
   border: 0;
   background-color: rgba(0,0,0,0.2);
   color: white;
-}
-
-.navbar .logo{
-  width: 30%;
-  margin: 10px;
+  padding-top: 15px;
+  padding-top: 10px;
+  -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out,border-bottom .5s ease-in-out;
+  -moz-transition: background .5s ease-in-out,padding .5s ease-in-out,border-bottom .5s ease-in-out;
+  transition: background .5s ease-in-out,padding .5s ease-in-out,border-bottom .5s ease-in-out;
 }
 
 .navbar .page-link{
   position: relative;
   color: white;
+}
+
+.nav-scrolled{
+  padding-top: 0px;
+  background-color: white;
+  color: black;
+}
+
+.nav-scrolled .page-link{
+  color: black;
+}
+
+.nav-scrolled .logo{
+  filter: invert(100%);
+}
+
+.navbar .logo{
+  width: 30%;
+  margin: 10px;
 }
 
 .navbar .page-link:after {
