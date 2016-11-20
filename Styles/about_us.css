@@ -70,6 +70,16 @@
 /*--------------------------------------------------------------------------------------------------------*/
 /* Map Styles */
 
+/*div < .transparent{
+	display: none;
+}*/
+
+
+/*div < #info-window{
+	display: none;
+}*/
+
+
 .map-container{
 	position: relative;
 }
@@ -86,6 +96,10 @@
 #map{
 	width: 100vw;
 	height: 100vh;
+}
+
+#map div{
+	/*overflow: hidden !important;*/
 }
 
 #info-window{

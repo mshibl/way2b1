@@ -1,5 +1,9 @@
-.white-bg {
+.bg-white{
   background-color: white;
+}
+
+.bg-gray{
+  background-color: #f4f4f4;
 }
 
 .row.dark-bg{
@@ -17,6 +21,10 @@
   top: 0;
   left: 0;
   z-index:-9999;
+}
+
+#main-content{
+  padding: 0;
 }
 
 /*#cf {
@@ -250,8 +258,9 @@ footer .policy-btn{
 .main-message{
   font-family: 'Armata', 'Open Sans', sans-serif;
   font-size: 18px;  
-  margin: 160px 80px 100px 80px;
+  padding: 100px 80px 100px 80px;
   line-height: 1.9;
+  background-color: white;
 }
 
 .main-message h1{

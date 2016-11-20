@@ -17,6 +17,8 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Aldrich|Armata|Montserrat|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
     <!-- Custom Styles -->
     <link href="Styles/style.css" rel="stylesheet">
     <link href="Styles/jobs.css" rel="stylesheet">
@@ -26,10 +28,14 @@
     <!-- JQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="Scripts/jquery.cycle.all.js"></script>
+    <!-- Slick Carousel -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
     <!-- Bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- Custom Script -->
     <script src="Scripts/script.js"></script>
+
 </head>
 
 <body class="jobs-page">
@@ -40,13 +46,13 @@
           <i class="fa fa-bars" aria-hidden="true"></i>
         </button>
         <a href="index.html">
-          <img alt="logo" class="logo img-responsive" src="Assets/Images/Logo_Landscape.png">
+          <img alt="logo" class="logo img-responsive" src="Assets/Images/Logo_Shaded_Horizontal.png">
         </a>
       </div>
 
       <div class="collapse navbar-collapse" id="navbar-collapse">
         <ul class="nav navbar-nav navbar-right pages">
-          <li><a href="index.html"><span class="page-link">Products</span></a></li>
+          <li><a href="index.html#products"><span class="page-link">Products</span></a></li>
           <li><a href="jobs.html"><span class="page-link">Jobs</span></a></li>
           <li><a href="about_us.html"><span class="page-link">About Us</span></a></li>
         </ul>
@@ -54,29 +60,29 @@
     </div>
   </nav>
 
-  <div class="jumbotron">
+  <div class="jumbotron-top">
+    <div id="slideshow">
+      <img src="./Assets/Images/photos/pumpkins.jpg" class="bgM" alt='background image slideshow' />
+    </div>
     <div class="overlay"></div>
-    <p class="jumbotron-message">Join the Team!</p>
+    <p class="overlay-message">Join the team!</p>
+    <div class="scroll-down">
+      <a href="#main-content" class="scroll-down-button">
+        <img src="Assets/Buttons/down-button.svg" alt="scroll-down" />
+      </a>
+      <p id='scroll-down-text'>Scroll Down</p>
+    </div>
   </div>
+
+  <div id="main-content" class="container-fluid">
 
     <div class="main-message">
       <h1>Available Positions</h1>
-      <h3> Who we are </h3>
-      <p>
-        Way2B1 is a platform and a network that allows individuals, families, and their support systems to connect every facet of their lives seamlessly and with flawless execution. Our mission is to unify the disparate information that a family depends upon and give back control of key decisions to the family and their support, securely and with privacy. By connecting to information from its source, Way2B1 reduces the opportunity for error and delivers information in real time.
-        <br>
-        <br>
-        The platform currently includes domain focused applications that take the pain out of travel, financial controls, housekeeping and maintenance. Augmenting the technology platform is Way2B1's privacy conscious network, Grapevine, which introduces families to the world's elite service providers and philanthropic efforts and allows sharing of wisdom, artwork, and even use of vacation properties amongst family offices with strong relationships
-      </p>
     </div>
-  <div class="container-fluid main">
 
     <div class="row job-posting bg-gray">
-      <h3 class="position-title">
-        Software Engineer - Full Stack
-        <br>
-        San Francisco, CA
-      </h3>
+      <h3 class="position-title">Software Engineer - Full Stack</h3>
+      <h4>San Francisco, CA</h4>
 
       <h4 class="section-title">The Role</h4>
       <p>We have the incredible opportunity to provide families with transformative technology to make sense of their complex lives and in this role, you will be instrumental in building the software that makes this vision a scalable reality. We are seeking a dedicated and talented individual to help us define and build the Way2B1 platform as it scales. Our Full Stack Software Engineer position spans the backend services to creating phenomenal user experiences, all in Javascript.</p>
@@ -105,53 +111,76 @@
       <h4 class="section-title">To Apply</h4>
       <p>Send a cover letter, links to github, and your resume to <a href="mailto:jobs@way2b1.com?Subject=Hello!" target="_top">jobs@way2b1.com</a></p>
     </div>
+
+    <div class="row job-posting bg-white">
+      <h3 class="position-title">Software Engineer - Backend Lead</h3>
+      <h4>San Francisco, CA</h4>
+
+      <h4 class="section-title">The Role</h4>
+      <p>We have the opportunity to provide families with transformative technology to make sense of their complex lives. You will be instrumental in building the software that makes this possible. We are seeking dedicated and talented individuals to construct the Way2B1 platform from the ground up. Our Full Stack Software Engineer position spans creating legible backend services and creating phenomenal user experiences, all in Javascript.</p>
+
+      <h4 class="section-title">Technologies we use</h4>
+      <ul>
+       <li>React</li>
+       <li>Redux</li>
+       <li>MobX</li>
+       <li>Sockets.io</li>
+       <li>Node</li>
+       <li>Express</li>
+       <li>Postgres</li>
+       <li>Nginx</li>
+       <li>AWS</li>
+      </ul>
+
+      <h4 class="section-title">Relevant tech you love and may have used</h4>
+      <p>Firebase, MongoDB, Ember, Meteor, Angular, Typescript, jQuery, Java, C#, Elastic Search, SQL, Shell scripting</p>
+
+      <h4 class="section-title">Requirements</h4>
+      <p>Excellent CS Fundamentals<br>
+      Strong architectural and specification skills<br>
+      Two years software experience at a startup or technology focused company<br>
+      A desire to learn and improve on a daily basis through code reviews, design sessions, mentorship and reading
+      Expertise in our frameworks is a strong plus, but we expect the world to change quickly and we need to be adaptive<br>
+      Creativity, courage, empathy and stamina</p>
+
+      <h4 class="section-title">To Apply</h4>
+      <p>Send a cover letter, links to github, and your resume to <a href="mailto:jobs@way2b1.com?Subject=Hello!" target="_top">jobs@way2b1.com</a></p>
+    </div>
+
+    <div class="row job-posting bg-gray">
+      <h3 class="position-title">Embedded Business Analyst</h3>
+      <h4>San Francisco, CA; New York, NY</h4>
+
+      <h4 class="section-title">The Role</h4>
+      <p>We are seeking dedicated and talented individuals to change the way families interact with the information that powers their lives. With strong investment and incredible customer opportunities, we are uniquely positioned to own this market. We need you to make our technology and network perform inside of the offices of families with extremely complex lives. With equal parts product management, strategy, and communication -- you will help us bridge the gap between what our customers need and what we build. You’ll be joining a diverse team of engineers and domain experts in the early stages of a Silicon Valley startup. You aren’t a software engineer, but you know how to wield technology masterfully. At the core of our culture are enjoyment in the journey, investment in teammates, and expertise in our respective crafts.</p>
+
+      <h4 class="section-title">Desired Skills</h4>
+      <p>Phenomenal communication abilities<br>
+      Entrepreneurial mindset and associated skills<br>
+      Experience within Institutional Finance<br>
+      Experience interfacing with Fortune 500 senior leadership<br>
+      Experience interacting with high net worth family offices<br>
+      Product management skills<br>
+      Turning user pain points into actionable bugs and feature requests<br>
+      Innate sensitivity to technology with a degree of difficulty<br>
+      Prioritization and planning through Asana or equivalent<br>
+      Ability to create mockups of potential solutions<br>
+      Able to travel 50% of time</p>
+
+      <h4 class="section-title">To Apply</h4>
+      <p>Send a cover letter and your resume to <a href="mailto:jobs@way2b1.com?Subject=Hello!" target="_top">jobs@way2b1.com</a></p>
+    </div>
   </div>
 
-  <footer class="footer">
-    <div class="col-md-6">
-      <div class="pull-left">Copyright © 2016 WAY2B1. All rights reserved.</div>
-    </div>
-    <div class="col-md-6">
-      <div class="pull-right">
-        <span class="policy-btn" data-toggle="modal" data-target="#terms-modal"> Terms of Use </span>
-        <span class="policy-btn" data-toggle="modal" data-target="#privacy-modal"> Privacy Policy </span>
+  <footer class="footer bg-white">
+      <div class="col-md-6">
+        <div class="pull-left">2016 WAY2B1™. All rights reserved.</div>
+      </div>
+      <div class="col-md-6">
+        <div class="pull-right">
+          <a class="policy-btn"  href="Terms-of-Service.html">Terms of Use</a>
+          <a class="policy-btn"  href="Privacy-Policy.html">Privacy Policy</a>
+        </div>  
       </div>  
-    </div>  
   </footer>
 </body>
-
-
-<!-- Terms of Use -->
-<div class="modal fade" id="terms-modal" tabindex="-1" role="dialog" aria-labelledby="termsOfUseLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-        <h4 class="modal-title" id="termsOfUseLabel">Terms of Use</h4>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- Privacy Policy -->
-<div class="modal fade" id="privacy-modal" tabindex="-1" role="dialog" aria-labelledby="privacyPolicyLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-        <h4 class="modal-title" id="privacyPolicyLabel">Privacy Policy</h4>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-    </div>
-  </div>
-</div>
