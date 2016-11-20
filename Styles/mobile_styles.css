@@ -1,10 +1,35 @@
 /*/* Bootstrap col-md cutoff ----------- */
 @media only screen and (max-width: 992px) {
-  .product-card .product-desc{
+  #product-cards{
+    padding: 0px;
+  }
+
+  .card-flex-box {
+    margin-bottom: 0px; 
+    margin-top: 30px; 
+  }  
+
+  .bullets{
+    padding: 20px 0 0 0;
+  }  
+
+  .carousel-container .buttons img{
+    width: 80%;
+  }
+
+  .carousel-cards .card {
+    height: auto; 
+  }
+
+  .card .product-desc {
+    height: auto; 
     border-radius: 0 0 8px 8px;
   }
 
-  .product-card .product-image img {
+  .product-card .product-desc{
+  }
+
+  .card .product-image img {
     margin: 15px 0 15px 0;
   }
 
@@ -16,14 +41,30 @@
       width: 60vmax;
   }
 
-  .product-card .product-image, .product-card .product-desc{
+  .card .product-image, .card .product-desc{
     width: 100%;
   }
+
+/*  .product-card .product-image, .product-card .product-desc{
+    width: 100%;
+  }*/
 
 }
 
 /*/* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-width: 320px) and (max-width : 480px) {
+  .nav-scrolled{
+    padding-top: 10px;
+  }
+
+  .navbar .logo{
+    width: 100px;
+  }
+
+  .products {
+    padding: 0;
+  }
+
   .products > h3 {
     margin-top: 75px;
     font-size: 25px;
@@ -38,28 +79,37 @@
   }
 
   .ecosystem{
-    margin: 30px 0 0 0;
+    padding: 40px 10px 0 10px;
   }
 
-  .ecosystem{
+  .ecosystem p{
+    font-size: 15px;
+  }
+
+  .ecosystem img{
+    padding: 0px 0px 20px 0px;
   }
 
   .carouselbox{
     height: 75%;
   }
 
-  .product-card .product-desc{
+  .product-card{
+    box-shadow:  0px 0px 30px 0 rgba(0, 0, 0, 0.18);
+  }
+
+  .card .product-desc{
     padding: 20px 30px 20px 30px;
     border-radius: 0 0px 8px 8px;
   }
 
-  .solutions .right, .solutions .left{
+/*  .solutions .right, .solutions .left{
     padding: 0px;
-  }
+  }*/
 
-  .solutions {
+/*  .solutions {
     padding: 0 5vmin 5vmin 5vmin;
-  }
+  }*/
 
   .main-message{
     margin: 100px 30px 50px 30px;
@@ -72,6 +122,24 @@
 
   .profiles .profile p {
     padding: 0 50px 0 50px;
+  }
+
+
+  .solutions{
+    padding: 0 20px 20px 20px;
+
+  }
+
+  .solutions h3{
+    margin: 85px 0 50px 0;
+  }
+
+  .solutions > div{
+
+  }
+
+  .solutions p{
+    font-size: 15px;
   }
 }
 
