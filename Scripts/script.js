@@ -33,7 +33,7 @@ $(document).ready(function(){
   // Scroll-down button
   $(".scroll-down").click(function() {
       $('html,body').animate({
-          scrollTop: $("#ecosystem").offset().top}, 'slow');
+          scrollTop: $("#main-content").offset().top}, 'slow');
   });
 
   // Background slideshow

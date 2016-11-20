@@ -1,25 +1,20 @@
-.main{
+#main-content{
 	padding: 0;
+	background-color: #1e3043;
 }
 
-.jumbotron {
-	background: url('../Assets/Images/san_francisco.jpg');
-	background-attachment:fixed;
-	background-size: cover;
-}
-
+/*--------------------------------------------------------------------------------------------------------*/
 /* Profile Styles */
 
 .profiles{
-	background-color: rgba(0, 0, 0, 0.7);
-	font-family: Armata;
+	font-family: 'Armata', 'Open Sans', sans-serif;
 	color: white;
+	padding-top: 60px;
+	padding-bottom: 20px;
 }
 
 .profiles > .row{
-	padding: 55px 0 40px 0;
 	position: relative;
-	min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,16 +25,6 @@
       flex-wrap: wrap;
   max-width: 100vw;
   margin: 0;
-}
-
-.profiles .section-bg{
-	background: url('../Assets/Images/forest.jpg');
-	background-attachment:fixed;
-	background-size: cover;
-}
-
-.profiles .overlay{
-	background-color: rgba(0, 0, 0, 0.7);
 }
 
 .profiles .profile{
@@ -64,19 +49,25 @@
 }
 
 .profiles .profile h3{
-	font-size: 22px;
-	line-height: 1.2;
+	font-size: 26px;
+	line-height: 1.4;
+	text-align: center;
+	color: #ffffff;
 	text-align: center;
 	margin: 30px 0 30px 0;
 }
 
 .profiles .profile p{
-		max-width: 100vw;
+	font-family: 'Open Sans';
+  font-weight: 300;
 	font-size: 15px;
 	line-height: 1.9;
-	padding: 0 80px 0 80px;
+	color: #ffffff;
+	max-width: 100vw;
+	padding: 0 4vw 0 4vw
 }
 
+/*--------------------------------------------------------------------------------------------------------*/
 /* Map Styles */
 
 .map-container{
@@ -106,7 +97,7 @@
 	font-family: 'Montserrat';
 		font-size: 24px;
 	line-height: 1.1;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 
 #info-window p{
