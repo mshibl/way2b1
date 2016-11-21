@@ -149,6 +149,19 @@
   width: 100%;
 }
 
+.navbar .page-link.current:after{
+  background-color: white;
+  bottom: -2px;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  visibility: visible !important;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
 .navbar .pages {
   margin-top: 5px;
 }
