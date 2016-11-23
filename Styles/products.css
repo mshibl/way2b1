@@ -56,7 +56,7 @@
   border: solid 3px #84bdf9;
 }
 
-.under-development .Palette .card{
+.under-development .Palete .card{
   border: solid 3px #990f2e;
 }
 
@@ -110,6 +110,7 @@
 }
 
 .card .product-image img{
+  padding: 20px;
   width: 60%
 }
 

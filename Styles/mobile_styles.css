@@ -1,5 +1,42 @@
-/*/* Bootstrap col-md cutoff ----------- */
+/*/* Smartphones ((Bootstrap col-md cutoff)) ----------- */
 @media only screen and (max-width: 992px) {
+  .nav-scrolled{
+    padding-top: 10px;
+  }
+
+  .navbar .logo{
+    width: 100px;
+  }
+
+  .products {
+    padding: 0;
+  }
+
+  .products > h3 {
+    margin-top: 75px;
+    font-size: 25px;
+  }
+
+  .impact h3 {
+    font-size: 25px;
+  }
+
+  .solutions h3 {
+    font-size: 25px;
+  }
+
+  .ecosystem{
+    padding: 40px 10px 0 10px;
+  }
+
+  .ecosystem p{
+    font-size: 15px;
+  }
+
+  .ecosystem img{
+    padding: 0px 0px 20px 0px;
+  }
+
   #product-cards{
     padding: 0px;
   }
@@ -45,51 +82,6 @@
     width: 100%;
   }
 
-/*  .product-card .product-image, .product-card .product-desc{
-    width: 100%;
-  }*/
-
-}
-
-/*/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-width: 320px) and (max-width : 480px) {
-  .nav-scrolled{
-    padding-top: 10px;
-  }
-
-  .navbar .logo{
-    width: 100px;
-  }
-
-  .products {
-    padding: 0;
-  }
-
-  .products > h3 {
-    margin-top: 75px;
-    font-size: 25px;
-  }
-
-  .impact h3 {
-    font-size: 25px;
-  }
-
-  .solutions h3 {
-    font-size: 25px;
-  }
-
-  .ecosystem{
-    padding: 40px 10px 0 10px;
-  }
-
-  .ecosystem p{
-    font-size: 15px;
-  }
-
-  .ecosystem img{
-    padding: 0px 0px 20px 0px;
-  }
-
   .carouselbox{
     height: 75%;
   }
@@ -103,17 +95,20 @@
     border-radius: 0 0px 8px 8px;
   }
 
-/*  .solutions .right, .solutions .left{
-    padding: 0px;
-  }*/
-
-/*  .solutions {
-    padding: 0 5vmin 5vmin 5vmin;
-  }*/
-
-  .main-message{
-    margin: 100px 30px 50px 30px;
+  .available-positions{
+    margin: 0;
     font-size: 14px;
+    padding: 50px 20px 50px 20px;
+    min-height: 100vh;
+  }
+
+  .available-positions h1{
+    margin-bottom: 40px;
+  }
+
+  .available-positions h3{
+    margin-top: 15px;
+    font-size: 18px;
   }
 
   .job-posting{

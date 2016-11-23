@@ -147,6 +147,7 @@
   }
 
   .card .product-image img{
+    padding: 20px;
     width: 60%
   }
 
@@ -163,6 +164,7 @@
 
   .card .product-desc h3{
     margin-top: 0px;
+    margin-bottom: 20px;
     font-size: 22px;
     line-height: 1.4;
     color: #1e9cc4;
@@ -220,11 +222,12 @@
     background: red;
     border-radius: 3.5px;
     margin: 0 7.5px 0 7.5px;  
-    background-color: #2c3743;
+    background-color: white;
+    opacity: 0.3;
   }
 
   .bullets .current{
-    background-color: #ffffff;
+    opacity: 1;
   }
 
 /*--------------------------------------------------------------------------------------------------------*/
