@@ -43,8 +43,8 @@ $(document).ready(function(){
   $('.carousel-cards').slick({
     prevArrow: $('#left-button'),
     nextArrow: $('#right-button'),
-    // autoplay: true,
-    // autoplaySpeed: 2000
+    autoplay: true,
+    autoplaySpeed: 2000
   });
 
   var bullets = $('.bullets div')
