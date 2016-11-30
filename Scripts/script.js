@@ -42,18 +42,20 @@ $(document).ready(function(){
   // Products Carousel
   $('.carousel-cards').slick({
     prevArrow: $('#left-button'),
-    nextArrow: $('#right-button')
+    nextArrow: $('#right-button'),
+    // autoplay: true,
+    // autoplaySpeed: 2000
   });
 
   var bullets = $('.bullets div')
   var current = bullets[0]
 
-  $('.buttons').click(function(){
+  $('.carousel-cards').on('swipe afterChange', function(event, slick, direction){
     current.classList.remove('current');
     var counter = $('.slick-active').attr('data-slick-index')
     current = bullets[counter];
     current.classList.add('current');
-  })
+  });
 });
 
 

@@ -22,8 +22,8 @@
 .ecosystem h3{
   margin-bottom: 30px;
   margin-top: 30px;
-  font-size: 34px;
-  line-height: 1.1;
+  font-size: 30px;
+  line-height: 1.5;
   color: #212121;
 }
 
@@ -92,7 +92,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 340px;
+    min-height: 340px;
   }
 
   .card-flex-box {
@@ -129,8 +129,31 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    border: solid 3px #1e9cc4;
     border-radius: 8px;
+  }
+
+  .card.source{
+    border: solid 3px #196681;
+  }
+
+  .card.fixit{
+    border: solid 3px #f76b41;
+  }
+
+  .card.greenlight{
+    border: solid 3px #32868d;
+  }
+
+  .card.palate{
+    border: solid 3px #c42437;
+  }
+
+  .card.spotless{
+    border: solid 3px #88bff7;
+  }
+
+  .card.takeoff{
+    border: solid 3px #f2b94f;
   }
 
   .card .product-image{
@@ -148,11 +171,12 @@
 
   .card .product-image img{
     padding: 20px;
-    width: 60%
+    width: 12vw;
   }
 
   .card .product-desc{
     height: 100%;
+    min-height: 340px;
     width: 60%;
     border-radius: 0 8px 8px 0;
     padding: 70px;

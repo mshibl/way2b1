@@ -18,9 +18,10 @@ function initMap() {
   });
 
   var contentString = '<div id="info-window">' +
-    '<h3> Say Hello </h3>'+
+    '<h3> Say Hello! </h3>'+
     '<p>141 Connecticut Street</p>'+
     '<p>San Francisco, CA </p>'+
+    '<a class="btn btn-info" role="button" href="mailto:hello@way2b1.com">Get in touch</a>'+
     '</div>'
 
   infoBubble = new InfoBubble({
@@ -38,7 +39,7 @@ function initMap() {
     arrowPosition: 30,
     backgroundClassName: 'transparent',
     arrowStyle: 0,
-    minWidth: 400
+    minWidth: 200
   });
 
   var styledMapType = new google.maps.StyledMapType([

@@ -1,4 +1,19 @@
-/*/* Smartphones ((Bootstrap col-md cutoff)) ----------- */
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+   #slideshow{
+      left: -70% !important;
+    }
+
+  .carousel-container .buttons{
+    display: none !important;
+  }    
+
+  .card .product-image img {
+    width: 70% !important;
+  }
+}
+
+/* Bootstrap cutoff ----------- */
 @media only screen and (max-width: 992px) {
   .nav-scrolled{
     padding-top: 10px;
@@ -26,7 +41,7 @@
   }
 
   .ecosystem{
-    padding: 40px 10px 0 10px;
+    padding: 40px 25px 0 25px;
   }
 
   .ecosystem p{
@@ -48,7 +63,7 @@
 
   .bullets{
     padding: 20px 0 0 0;
-  }  
+  }
 
   .carousel-container .buttons img{
     width: 80%;
@@ -56,6 +71,7 @@
 
   .carousel-cards .card {
     height: auto; 
+    width: 95%;
   }
 
   .card .product-desc {
@@ -63,11 +79,9 @@
     border-radius: 0 0 8px 8px;
   }
 
-  .product-card .product-desc{
-  }
-
   .card .product-image img {
     margin: 15px 0 15px 0;
+    width: 40%;
   }
 
   .product-card {
@@ -99,7 +113,6 @@
     margin: 0;
     font-size: 14px;
     padding: 50px 20px 50px 20px;
-    min-height: 100vh;
   }
 
   .available-positions h1{
@@ -121,7 +134,7 @@
 
 
   .solutions{
-    padding: 0 20px 20px 20px;
+    padding: 0 50px 20px 50px;
 
   }
 
@@ -135,6 +148,10 @@
 
   .solutions p{
     font-size: 15px;
+  }
+
+  .current-products, .under-development {
+    padding-top: 100px;
   }
 }
 
