@@ -1,0 +1,139 @@
+#main-content{
+	padding: 0;
+	background-color: #1e3043;
+}
+
+/*--------------------------------------------------------------------------------------------------------*/
+/* Profile Styles */
+
+.profiles{
+	font-family: 'Armata', 'Open Sans', sans-serif;
+	color: white;
+	padding-top: 60px;
+	padding-bottom: 20px;
+}
+
+.profiles > .row{
+	position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 100vw;
+  margin: 0;
+}
+
+.profiles .profile{
+	padding: 40px 0 40px 0;
+}
+
+.profiles .profile .profile-pic img{
+	width: 60%;
+}
+
+.profiles .row .section-bg{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.profiles .profile img{
+	border-radius: 15px;
+	display: block;
+	margin: auto;
+	box-shadow: 13px 21px 40px 0px rgba(0,0,0,0.18);
+}
+
+.profiles .profile h3{
+	font-size: 26px;
+	line-height: 1.4;
+	text-align: center;
+	color: #ffffff;
+	text-align: center;
+	margin: 30px 0 30px 0;
+}
+
+.profiles .profile .ttl{
+	font-family: 'Open Sans';
+	font-weight: 300;
+	font-size: 15px;
+}
+
+.profiles .profile p{
+	font-family: 'Open Sans';
+  font-weight: 300;
+	font-size: 15px;
+	line-height: 1.9;
+	color: #ffffff;
+	max-width: 100vw;
+	padding: 0 4vw 0 4vw
+}
+
+/*--------------------------------------------------------------------------------------------------------*/
+/* Map Styles */
+
+/*div < .transparent{
+	display: none;
+}*/
+
+
+/*div < #info-window{
+	display: none;
+}*/
+
+
+.map-container{
+	position: relative;
+}
+
+.map-overlay{
+	background: rgba(0, 0, 0, 0.4);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#map{
+	width: 100vw;
+	height: 100vh;
+}
+
+div[class^=" _ibani_"] > div:nth-child(3){
+	overflow: hidden !important;
+}
+
+#info-window{
+	text-align: center;
+	color: white;
+	padding: 20px;
+	height: 250px;
+}
+
+#info-window::-webkit-scrollbar { 
+    display: none; 
+}
+
+#info-window h3{
+	font-family: 'Montserrat';
+		font-size: 24px;
+	line-height: 1.1;
+	margin-bottom: 20px;
+}
+
+#info-window p{
+	font-family: Armata;
+	font-size: 12px;
+	line-height: 1.5;
+}
+
+#info-window .btn-info{
+	background-color: white;
+	color: black;
+	margin-top: 20px;
+}

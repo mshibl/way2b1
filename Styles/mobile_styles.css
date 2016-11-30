@@ -1,0 +1,201 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+   #slideshow{
+      left: -70% !important;
+    }
+
+  .carousel-container .buttons{
+    display: none !important;
+  }    
+
+  .card .product-image img {
+    width: 70% !important;
+  }
+}
+
+/* Bootstrap cutoff ----------- */
+@media only screen and (max-width: 992px) {
+  .nav-scrolled{
+    padding-top: 10px;
+  }
+
+  .navbar .logo{
+    width: 100px;
+  }
+
+  .products {
+    padding: 0;
+  }
+
+  .products > h3 {
+    margin-top: 75px;
+    font-size: 25px;
+  }
+
+  .impact h3 {
+    font-size: 25px;
+  }
+
+  .solutions h3 {
+    font-size: 25px;
+  }
+
+  .ecosystem{
+    padding: 40px 25px 0 25px;
+  }
+
+  .ecosystem p{
+    font-size: 15px;
+  }
+
+  .ecosystem img{
+    padding: 0px 0px 20px 0px;
+  }
+
+  #product-cards{
+    padding: 0px;
+  }
+
+  .card-flex-box {
+    margin-bottom: 0px; 
+    margin-top: 30px; 
+  }  
+
+  .bullets{
+    padding: 20px 0 0 0;
+  }
+
+  .carousel-container .buttons img{
+    width: 80%;
+  }
+
+  .carousel-cards .card {
+    height: auto; 
+    width: 95%;
+  }
+
+  .card .product-desc {
+    height: auto; 
+    border-radius: 0 0 8px 8px;
+  }
+
+  .card .product-image img {
+    margin: 15px 0 15px 0;
+    width: 40%;
+  }
+
+  .product-card {
+    width: 85%;
+  }
+
+  .impact img {
+      width: 60vmax;
+  }
+
+  .card .product-image, .card .product-desc{
+    width: 100%;
+  }
+
+  .carouselbox{
+    height: 75%;
+  }
+
+  .product-card{
+    box-shadow:  0px 0px 30px 0 rgba(0, 0, 0, 0.18);
+  }
+
+  .card .product-desc{
+    padding: 20px 30px 20px 30px;
+    border-radius: 0 0px 8px 8px;
+  }
+
+  .available-positions{
+    margin: 0;
+    font-size: 14px;
+    padding: 50px 20px 50px 20px;
+  }
+
+  .available-positions h1{
+    margin-bottom: 40px;
+  }
+
+  .available-positions h3{
+    margin-top: 15px;
+    font-size: 18px;
+  }
+
+  .job-posting{
+    padding: 100px 30px 50px 30px;
+  }
+
+  .profiles .profile p {
+    padding: 0 50px 0 50px;
+  }
+
+
+  .solutions{
+    padding: 0 50px 20px 50px;
+
+  }
+
+  .solutions h3{
+    margin: 85px 0 50px 0;
+  }
+
+  .solutions > div{
+
+  }
+
+  .solutions p{
+    font-size: 15px;
+  }
+
+  .current-products, .under-development {
+    padding-top: 100px;
+  }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  .ecosystem {
+    margin: 8vw 8vw 0 8vw;
+  }
+
+  .ecosystem p{
+    font-size: 20px;
+  }
+
+  .solutions .right, .solutions .left{
+    padding: 0px;
+    font-size: 18px
+  }
+
+  .solutions {
+    padding: 0 5vmin 5vmin 5vmin;
+  }
+
+
+  .profiles .profile p {
+    font-size: 20px;
+  }
+
+  .job-posting p {
+    font-size: 15px;
+  }
+
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+/* Styles */
+}*/

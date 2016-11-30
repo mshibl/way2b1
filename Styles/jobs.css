@@ -1,0 +1,44 @@
+.jumbotron {
+  background: url('../Assets/Images/san_francisco.jpg');
+  background-attachment:fixed;
+  background-size: cover;
+}
+
+.available-positions{
+  font-family: 'Armata', 'Open Sans', sans-serif;
+  font-size: 18px;  
+  padding: 100px 80px 100px 80px;
+  line-height: 1.9;
+}
+
+.available-positions h1{
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-size: 34px;
+}
+
+.available-positions h3{
+  margin-top: 80px;
+  margin-bottom: 40px;
+  font-size: 24px;
+}
+
+.job-posting{
+  font-family: 'Armata';
+  min-height: 100vh;
+  padding: 100px 180px 80px 180px ;
+}
+
+.job-posting .position-title{
+  font-size: 20px;
+}
+
+.job-posting .section-title{
+  font-size: 18px;
+  padding: 20px 0 20px 0;
+}
+
+.job-posting p{
+  font-size: 14px;
+  line-height: 2;
+}
