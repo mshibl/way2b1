@@ -156,6 +156,30 @@
     border: solid 3px #f2b94f;
   }
 
+  .card.source .product-desc h3{
+    color: #196681;
+  }
+
+  .card.fixit .product-desc h3{
+    color: #f76b41;
+  }
+
+  .card.greenlight .product-desc h3{
+    color: #32868d;
+  }
+
+  .card.palate .product-desc h3{
+    color: #c42437;
+  }
+
+  .card.spotless .product-desc h3{
+    color: #88bff7;
+  }
+
+  .card.takeoff .product-desc h3{
+    color: #f2b94f;
+  }
+
   .card .product-image{
     width: 40%;
     display: -webkit-box;
