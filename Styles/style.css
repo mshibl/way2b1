@@ -13,7 +13,6 @@ body, #main-content{
 
 .row.dark-bg{
   background-color: #1E3043;
-  min-height: 100vh;
   max-width: 100vw;
 }
 
