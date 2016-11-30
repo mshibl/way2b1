@@ -1,3 +1,8 @@
+body, #main-content{
+  overflow-x: hidden;
+}
+
+
 .bg-white{
   background-color: white;
 }
@@ -27,73 +32,6 @@
   padding: 0;
 }
 
-/*#cf {
-  position:relative;
-  height: 100vh;
-    display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; 
-}
-
-.bg{
-  width: 100%;
-  height: 100% !important;
-}
-
-#cf div {
-  position:absolute;
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-    background-attachment:fixed !important;
-  background-size: cover !important;
-}
-
-@keyframes cfFadeInOut {
-  0% {
-    opacity:1;
-  }
-  17% {
-    opacity:1;
-  }
-  25% {
-    opacity:0;
-  }
-  92% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-
-#cf div {
-  animation-name: cfFadeInOut;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-duration: 8s;
-  animation-direction: alternate;
-}
-
-#cf div:nth-of-type(1) {
-  animation-delay: 6s;
-}
-#cf div:nth-of-type(2) {
-  animation-delay: 4s;
-}
-#cf div:nth-of-type(3) {
-  animation-delay: 2s;
-}
-#cf div:nth-of-type(4) {
-  animation-delay: 0;
-}*/
 
 /*  Navbar styles */
 
@@ -162,6 +100,11 @@
   transform: scaleX(1);
 }
 
+.nav-scrolled .page-link:after{
+  background-color: black;
+}
+
+
 .navbar .pages {
   margin-top: 5px;
 }
@@ -174,23 +117,42 @@
 
 /* Jumbotron styles */
 
+.jumbotron-top {
+  height: 100vh;
+  margin-bottom: 0;
+  padding: 0;
+  position: relative;
+}
+
+.overlay-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  font-family: 'Armata', 'Open Sans', sans-serif;
+  font-size: 4vmax;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-align: center;
+  z-index: 3;
+}
 
 .jumbotron-top .scroll-down{
   position: absolute;
-  bottom: 100px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   z-index: 3;
   cursor: pointer;
-  margin-top: 100px;
+  margin-top: 250px;
   text-align: center;
   color: white;
   height: 70px;
   display: flex;
   justify-content: center;
-}
-
-.jumbotron-top .scroll-down-button{
-  position: absolute;
-  bottom: 0px;
 }
 
 .jumbotron-top .scroll-down:hover #scroll-down-text{
@@ -204,38 +166,10 @@
   overflow: hidden;
 }
 
-
-.jumbotron-top {
-  /*background: url('../Assets/Images/sea_foam.jpg');*/
-  /*background-attachment:fixed;*/
-  /*background-size: cover;*/
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
--webkit-box-direction: normal;
-    -ms-flex-direction: column;
-        flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; 
-  height: 100vh;
-  margin-bottom: 0;
-  padding: 0;
-  position: relative;
+.jumbotron-top .scroll-down-button img{
+  width: 30%;
 }
 
-.overlay-message {
-  font-family: 'Armata', 'Open Sans', sans-serif;
-  font-size: 4vmax;
-  color: #FFFFFF;
-  text-transform: uppercase;
-  text-align: center;
-  z-index: 3;
-}
 
 /* Footer Styles */
 
@@ -267,26 +201,6 @@ footer .policy-btn{
 }
 
 /* Cross-Page Styles */
-
-.main-message{
-  font-family: 'Armata', 'Open Sans', sans-serif;
-  font-size: 18px;  
-  padding: 100px 80px 100px 80px;
-  line-height: 1.9;
-  background-color: white;
-}
-
-.main-message h1{
-  font-family: 'Open Sans', sans-serif;
-  text-align: center;
-  font-size: 34px;
-}
-
-.main-message h3{
-  margin-top: 80px;
-  margin-bottom: 40px;
-  font-size: 24px;
-}
 
 .overlay{
   position: absolute;

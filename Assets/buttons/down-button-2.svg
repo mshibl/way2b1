@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="9px" viewBox="0 0 15 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>back copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-Copy-17" transform="translate(-1327.000000, -2209.000000)">
+            <rect id="Rectangle-9-Copy" fill="#F2F2F2" x="0" y="1738" width="1440" height="960"></rect>
+            <g id="back-copy" transform="translate(1334.500000, 2214.000000) scale(-1, 1) rotate(-90.000000) translate(-1334.500000, -2214.000000) translate(1330.000000, 2206.000000)" fill="#FFFFFF">
+                <path d="M0.998777836,8.79821642 C0.532715974,8.33215455 0.532715974,7.59977163 0.998777836,7.13370977 L6.85784124,1.27464637 C7.05758203,1.07490557 7.39048336,0.941745037 7.65680443,0.941745037 C7.92312549,0.941745037 8.25602682,1.07490557 8.45576762,1.27464637 C8.92182948,1.74070823 8.92182948,2.47309115 8.45576762,2.93915301 L3.39566741,7.99925322 L8.45576762,13.0593534 C8.92182948,13.5254153 8.92182948,14.2577982 8.45576762,14.7238601 C7.98970576,15.1899219 7.25732283,15.1899219 6.79126097,14.7238601 L0.998777836,8.79821642 L0.998777836,8.79821642 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

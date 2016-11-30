@@ -48,16 +48,54 @@
   padding-bottom: 100px;
 }
 
-.under-development .Takeoff .card{
-  border: solid 3px #f4b140;
+
+.card.source{
+  border: solid 3px #196681;
 }
 
-.under-development .Spotless .card{
-  border: solid 3px #84bdf9;
+.card.fixit{
+  border: solid 3px #f76b41;
 }
 
-.under-development .Palette .card{
-  border: solid 3px #990f2e;
+.card.greenlight{
+  border: solid 3px #32868d;
+}
+
+.card.palate{
+  border: solid 3px #c42437;
+}
+
+.card.spotless{
+  border: solid 3px #88bff7;
+}
+
+.card.takeoff{
+  border: solid 3px #f2b94f;
+}
+
+
+.card.source .product-desc h3{
+  color: #196681;
+}
+
+.card.fixit .product-desc h3{
+  color: #f76b41;
+}
+
+.card.greenlight .product-desc h3{
+  color: #32868d;
+}
+
+.card.palate .product-desc h3{
+  color: #c42437;
+}
+
+.card.spotless .product-desc h3{
+  color: #88bff7;
+}
+
+.card.takeoff .product-desc h3{
+  color: #f2b94f;
 }
 
 
@@ -110,6 +148,7 @@
 }
 
 .card .product-image img{
+  padding: 20px;
   width: 60%
 }
 

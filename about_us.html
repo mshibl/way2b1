@@ -20,6 +20,8 @@
     <link href="https://fonts.googleapis.com/css?family=Aldrich|Armata|Montserrat|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
     <!-- Slick Carousel -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <!-- Custom Styles -->
     <link href="Styles/style.css" rel="stylesheet">
     <link href="Styles/about_us.css" rel="stylesheet">
@@ -32,9 +34,6 @@
     <script src="Scripts/jquery.cycle.all.js"></script>
     <!-- Bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <!-- Google Maps -->
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUOJpPBRBdMhal_FyBj-GbhnTgwtTmoVs&callback=initMap"> </script>
-    <script src="Scripts/infobubble-compiled.js"></script>
     <!-- Slick Carousel -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
     <!-- Custom Script -->
@@ -56,15 +55,16 @@ mixpanel.init("d37992743c5d4fc52396935fb27571a2");</script><!-- end Mixpanel -->
           <i class="fa fa-bars" aria-hidden="true"></i>
         </button>
         <a href="index.html">
-          <img alt="logo" class="logo img-responsive" src="Assets/Images/Logo_Shaded_Horizontal.png">
+          <img alt="logo" class="logo img-responsive" src="Assets/logos/logo_shaded_horizontal.png">
         </a>
       </div>
 
       <div class="collapse navbar-collapse" id="navbar-collapse">
         <ul class="nav navbar-nav navbar-right pages">
+          <li><a href="index.html"><span class="page-link">Home</span></a></li>
           <li><a href="products.html"><span class="page-link">Products</span></a></li>
           <li><a href="jobs.html"><span class="page-link">Jobs</span></a></li>
-          <li><a href="about_us.html"><span class="page-link current">About Us</span></a></li>
+          <li><a href="about_us.html"><span class="page-link">About Us</span></a></li>
         </ul>
       </div>
     </div>
@@ -72,15 +72,17 @@ mixpanel.init("d37992743c5d4fc52396935fb27571a2");</script><!-- end Mixpanel -->
 
 <div class="jumbotron-top">
   <div id="slideshow">
-    <img src="./Assets/Images/Photos/team.jpg" class="bgM" alt='background image slideshow' />
+    <img src="./Assets/Photos/team.jpg" class="bgM" alt='background image slideshow' />
   </div>
   <div class="overlay"></div>
   <p class="overlay-message">Hello!</p>
   <div class="scroll-down">
-    <a href="#main-content" class="scroll-down-button">
-      <img src="Assets/Buttons/down-button.svg" alt="scroll-down" />
-    </a>
-    <p id='scroll-down-text'>Scroll Down</p>
+    <div class="scroll-down-container">
+      <p id='scroll-down-text'>Scroll Down</p>
+      <a href="#main-content" class="scroll-down-button">
+        <img src="Assets/buttons/down-button.svg" class="animated bounce" alt="scroll-down" />
+      </a>
+    </div>
   </div>
 </div>
 
@@ -92,7 +94,7 @@ mixpanel.init("d37992743c5d4fc52396935fb27571a2");</script><!-- end Mixpanel -->
         <!-- Brett -->
         <div class="profile col-md-4 row">
           <div class="col-md-12 profile-pic">
-            <img class="img-responsive" src="Assets/Team/Brett.png">
+            <img class="img-responsive" src="Assets/team/brett.png">
           </div>
           <h3 class="col-md-12">
             Brett Abrams
@@ -105,7 +107,7 @@ mixpanel.init("d37992743c5d4fc52396935fb27571a2");</script><!-- end Mixpanel -->
         <!-- Graham -->
         <div class="profile col-md-4 row">
           <div class="col-md-12 profile-pic">
-            <img class="img-responsive" src="Assets/Team/Graham.png">
+            <img class="img-responsive" src="Assets/team/graham.png">
           </div>
           <h3 class="col-md-12">
             Graham Allen
@@ -118,7 +120,7 @@ mixpanel.init("d37992743c5d4fc52396935fb27571a2");</script><!-- end Mixpanel -->
         <!-- Allxie -->
         <div class="profile col-md-4 row">
           <div class="col-md-12 profile-pic">
-            <img class="img-responsive" src="Assets/Team/Allxie.png">
+            <img class="img-responsive" src="Assets/team/allxie.png">
           </div>
           <h3 class="col-md-12">
             Allxie Cleary
@@ -134,11 +136,11 @@ mixpanel.init("d37992743c5d4fc52396935fb27571a2");</script><!-- end Mixpanel -->
         <!-- Gala -->
         <div class="profile col-md-4 row">
           <div class="col-md-12 profile-pic">
-            <img class="img-responsive" src="Assets/Team/Gala.png">
+            <img class="img-responsive" src="Assets/team/gala.png">
           </div>
           <h3 class="col-md-12">
             Tarang Gala
-            <div class="ttl">DESIGN LEAD</div>
+            <div class="ttl">CREATIVE LEAD</div>
           </h3>
           <p class="col-md-12">
             Tarang is responsible for bringing Way2B1's vision to life by creating products that have a direct impact on families and the teams that help them thrive. He recently completed his BFA in Interaction Design from California College of the Arts. He is passionate about initiatives that empower people to share knowledge and co-produces a science comedy show in SF called Eureka. In his free time Tarang enjoys travelling and capturing the world around him through a variety of artistic mediums.
@@ -147,7 +149,7 @@ mixpanel.init("d37992743c5d4fc52396935fb27571a2");</script><!-- end Mixpanel -->
         <!-- Casey -->
         <div class="profile col-md-4 row">
           <div class="col-md-12 profile-pic">
-            <img class="img-responsive" src="Assets/Team/Casey.png">
+            <img class="img-responsive" src="Assets/team/casey.png">
           </div>
           <h3 class="col-md-12">
             Casey Ketterling
@@ -160,7 +162,7 @@ mixpanel.init("d37992743c5d4fc52396935fb27571a2");</script><!-- end Mixpanel -->
         <!-- Divyesh -->
         <div class="profile col-md-4 row">
           <div class="col-md-12 profile-pic">
-            <img class="img-responsive" src="Assets/Team/Divyesh.png">
+            <img class="img-responsive" src="Assets/team/divyesh.png">
           </div>
           <h3 class="col-md-12">
             Divyesh Motiwalla
@@ -176,7 +178,7 @@ mixpanel.init("d37992743c5d4fc52396935fb27571a2");</script><!-- end Mixpanel -->
         <!-- Kathleen -->
         <div class="profile col-md-4 row">
           <div class="col-md-12 profile-pic">
-            <img class="img-responsive" src="Assets/Team/Kathleen.png">
+            <img class="img-responsive" src="Assets/team/kathleen.png">
           </div>
           <h3 class="col-md-12">
             Kathleen Ngo
@@ -189,7 +191,7 @@ mixpanel.init("d37992743c5d4fc52396935fb27571a2");</script><!-- end Mixpanel -->
         <!-- Wayne -->
         <div class="profile col-md-4 row">
           <div class="col-md-12 profile-pic">
-            <img class="img-responsive" src="Assets/Team/Wayne.png">
+            <img class="img-responsive" src="Assets/team/wayne.png">
           </div>
           <h3 class="col-md-12">
             P. Wayne Osborne
@@ -202,7 +204,7 @@ mixpanel.init("d37992743c5d4fc52396935fb27571a2");</script><!-- end Mixpanel -->
         <!-- Jordan -->
         <div class="profile col-md-4 row">
           <div class="col-md-12 profile-pic">
-            <img class="img-responsive" src="Assets/Team/Jordan.png">
+            <img class="img-responsive" src="Assets/team/jordan.png">
           </div>
           <h3 class="col-md-12">
             Jordan Rein
@@ -218,7 +220,7 @@ mixpanel.init("d37992743c5d4fc52396935fb27571a2");</script><!-- end Mixpanel -->
         <!-- Mo Shibl -->
         <div class="profile col-md-4 row">
           <div class="col-md-12 profile-pic">
-            <img class="img-responsive" src="Assets/Team/Mo.png">
+            <img class="img-responsive" src="Assets/team/mo.png">
           </div>
           <h3 class="col-md-12">
             Mohamed Shibl
@@ -231,7 +233,7 @@ mixpanel.init("d37992743c5d4fc52396935fb27571a2");</script><!-- end Mixpanel -->
         <!-- Mike -->
         <div class="profile col-md-4 row">
           <div class="col-md-12 profile-pic">
-            <img class="img-responsive" src="Assets/Team/Mike.png">
+            <img class="img-responsive" src="Assets/team/mike.png">
           </div>
           <h3 class="col-md-12">
             Michael Toth
@@ -260,3 +262,7 @@ mixpanel.init("d37992743c5d4fc52396935fb27571a2");</script><!-- end Mixpanel -->
       </div>  
   </footer>
 </body>
+
+<!-- Google Maps -->
+<script src="Scripts/infobubble-compiled.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUOJpPBRBdMhal_FyBj-GbhnTgwtTmoVs&callback=initMap"> </script>

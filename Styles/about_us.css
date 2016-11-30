@@ -104,13 +104,19 @@
 	height: 100vh;
 }
 
-#map div{
-	/*overflow: hidden !important;*/
+div[class^=" _ibani_"] > div:nth-child(3){
+	overflow: hidden !important;
 }
 
 #info-window{
+	text-align: center;
 	color: white;
 	padding: 20px;
+	height: 250px;
+}
+
+#info-window::-webkit-scrollbar { 
+    display: none; 
 }
 
 #info-window h3{
@@ -124,4 +130,10 @@
 	font-family: Armata;
 	font-size: 12px;
 	line-height: 1.5;
+}
+
+#info-window .btn-info{
+	background-color: white;
+	color: black;
+	margin-top: 20px;
 }
