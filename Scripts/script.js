@@ -11,9 +11,11 @@ function throttle(fn, wait) {
 
 $(document).ready(function(){
   // Contact us form
-    // (function (w,i,d,g,e,t,s) {w[d] = w[d]||[];t= i.createElement(g);
-    //   t.async=1;t.src=e;s=i.getElementsByTagName(g)[0];s.parentNode.insertBefore(t, s);
-    // })(window, document, '_gscq','script','//widgets.getsitecontrol.com/60893/script.js');
+  (function (w,i,d,g,e,t,s) {w[d] = w[d]||[];t= i.createElement(g);
+    t.async=1;t.src=e;s=i.getElementsByTagName(g)[0];s.parentNode.insertBefore(t, s);
+  })(window, document, '_gscq','script','//widgets.getsitecontrol.com/62592/script.js');
+
+
 
   // Navbar scroll effect
   var animateNavbar = throttle(function() {
